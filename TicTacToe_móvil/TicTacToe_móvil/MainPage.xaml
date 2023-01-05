@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe_móvil.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <StackLayout BackgroundColor="#07011C">
+        <Frame BackgroundColor="Transparent" Padding="30" Margin="0,20,0,0" CornerRadius="0" >
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Tic Tac Toe" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" TextTransform="Uppercase" FontFamily="Plaguard"/>
+        </Frame>
+        <Frame Padding="0" BackgroundColor="Transparent" >
+            <Grid HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+            
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+                <Button  Grid.Row="0" Grid.Column="0" BackgroundColor="#06455C" 
+                    Text="Un Jugador" FontSize="16" TextTransform="Uppercase" FontFamily="Plaguard" TextColor="White" Clicked="Button_Clicked"></Button>
+
+                <Button Grid.Row="0" Grid.Column="1" BackgroundColor="#06455C" 
+                    Text="Dos jugadores" FontSize="16" TextTransform="Uppercase" FontFamily="Plaguard" TextColor="White" Clicked="Button_Clicked_1"></Button>
+
+                <Button Grid.Row="0" Grid.Column="2" BackgroundColor="#06455C" 
+                    Text="Online" FontSize="16" TextTransform="Uppercase" FontFamily="Plaguard" TextColor="White" Clicked="Button_Clicked_2"></Button>
+        </Grid>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
