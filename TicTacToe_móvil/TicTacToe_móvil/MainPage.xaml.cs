@@ -33,12 +33,12 @@ namespace TicTacToe_móvil
             await Navigation.PushAsync(new DosJugadoreForm());
         }
 
-        private void Button_Clicked_2(object sender, EventArgs e)
+        private async void Button_Clicked_2(object sender, EventArgs e)
         {
-            //var page = (App.Current.MainPage as SharedTransitionNavigationPage).CurrentPage;
-            //SharedTransitionNavigationPage.SetTransitionDuration(page, 800);
+            var page = (App.Current.MainPage as SharedTransitionNavigationPage).CurrentPage;
+            SharedTransitionNavigationPage.SetTransitionDuration(page, 800);
 
-            //await Navigation.PushAsync(new DosJugadoreForm());
+            await Navigation.PushAsync(new OnlineForm());
         }
     }
 }

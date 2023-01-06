@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe_móvil.OnlineForm">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#07011C">
+            <Frame BackgroundColor="Transparent" Padding="30" Margin="0,20,0,0" CornerRadius="0" >
+                <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Online" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" TextTransform="Uppercase" FontFamily="Plaguard"/>
+            </Frame>
+            <StackLayout Padding="40" BackgroundColor="Transparent" >
+                <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Unirse a una partidad" HorizontalTextAlignment="Center" TextColor="White" FontSize="25" TextTransform="Uppercase" FontFamily="Plaguard"/>
+                <Entry x:Name="TXT1" BackgroundColor="White" Placeholder="ID" TextColor="Black" PlaceholderColor="Black" Margin="0,10,0,20"></Entry>
+                <Button Grid.Row="0" Grid.Column="2" BackgroundColor="#06455C" 
+                    Text="Conecetar" FontSize="16" TextTransform="Uppercase" FontFamily="Plaguard" TextColor="White" Clicked="Button_Clicked_1"></Button>
+                <Label Margin="0,90,0,0" HorizontalOptions="Center" VerticalOptions="Center" Text="Crear partida" HorizontalTextAlignment="Center" TextColor="White" FontSize="25" TextTransform="Uppercase" FontFamily="Plaguard"/>
+                <Button Grid.Row="0" Grid.Column="2" BackgroundColor="#06455C" 
+                    Text="Crear" FontSize="16" TextTransform="Uppercase" FontFamily="Plaguard" Margin="0,10,0,0" TextColor="White" Clicked="Button_Clicked_2"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

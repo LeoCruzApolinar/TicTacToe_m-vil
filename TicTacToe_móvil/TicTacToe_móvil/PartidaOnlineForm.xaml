@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe_móvil.PartidaOnlineForm">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#07011C" Padding="0,30,0,0">
+            <Frame BackgroundColor="Transparent" Padding="20" CornerRadius="0" >
+                <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Dos jugadores" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" TextTransform="Uppercase" FontFamily="Plaguard"/>
+            </Frame>
+            <StackLayout Padding="0,20,0,40">
+                <Grid>
+
+                    <Label Grid.Column="0" Text="Jugador 1 (X)" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" Margin="30,0,0,0" FontSize="20" FontFamily="Plaguard"></Label>
+                    <Label Grid.Column="1" Text="Jugador 2 (O)" TextColor="White" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,30,0" FontSize="20" FontFamily="Plaguard"></Label>
+                    <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" Padding="0,0,0,0">
+                        <Label  x:Name="LBLx" Text="0" TextColor="White" Margin="75,0,0,0" FontSize="35" FontFamily="Plaguard"></Label>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="Transparent" Padding="0,0,0,0">
+                        <Label  x:Name="LBLo" Text="0" TextColor="White" Margin="0,0,75,0" HorizontalOptions="End"  FontSize="35" FontFamily="Plaguard"></Label>
+                    </Frame>
+                </Grid>
+
+            </StackLayout>
+            <Frame Padding="0" BackgroundColor="Transparent" VerticalOptions="Center" >
+                <Grid HorizontalOptions="Center" VerticalOptions="Center" x:Name="Grid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="110" />
+                        <ColumnDefinition Width="110" />
+                        <ColumnDefinition Width="110" />
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="110" />
+                        <RowDefinition Height="110" />
+                        <RowDefinition Height="110" />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="BTN1" Grid.Row="0" Grid.Column="0" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN1_Clicked" TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN2" Grid.Row="0" Grid.Column="1" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN2_Clicked"   TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN3" Grid.Row="0" Grid.Column="2" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN3_Clicked"  TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN4" Grid.Row="1" Grid.Column="0" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN4_Clicked"  TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN5" Grid.Row="1" Grid.Column="1" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN5_Clicked"   TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN6" Grid.Row="1" Grid.Column="2" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN6_Clicked"  TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN7" Grid.Row="2" Grid.Column="0" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN7_Clicked"  TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN8" Grid.Row="2" Grid.Column="1" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN8_Clicked"  TextColor="White" FontSize="60"></Button>
+                    <Button x:Name="BTN9" Grid.Row="2" Grid.Column="2" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Clicked="BTN9_Clicked"  TextColor="White" FontSize="60"></Button>
+
+                </Grid>
+            </Frame>
+            <StackLayout Padding="30,60,30,0">
+                <Button  Grid.Row="0" Grid.Column="0" BackgroundColor="#06455C" 
+                    Text="Limpiar tablero" FontSize="16" TextTransform="Uppercase" FontFamily="Plaguard" TextColor="White" Clicked="Button_Clicked"></Button>
+                <Button  Grid.Row="0" Grid.Column="0" BackgroundColor="#06455C" 
+                    Text="Reiniciar" FontSize="16" TextTransform="Uppercase" FontFamily="Plaguard" TextColor="White" Clicked="Button_Clicked_1"></Button>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

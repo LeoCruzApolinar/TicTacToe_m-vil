@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe_móvil.SalaDeEsperaOnlinereForm">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#07011C">
+            <Frame BackgroundColor="Transparent" Padding="30" Margin="0,20,0,0" CornerRadius="0" >
+                <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Sala de espera" HorizontalTextAlignment="Center" TextColor="White" FontSize="65" TextTransform="Uppercase" FontFamily="Plaguard"/>
+            </Frame>
+            <StackLayout Padding="40" BackgroundColor="Transparent" >
+                <Label x:Name="LBL" VerticalOptions="Center" FontSize="160" TextColor="White" HorizontalOptions="Center" Text="2/0" FontFamily="Plaguard" Margin="0,100,0,0"></Label>
+                <Label x:Name="LBLID" HorizontalOptions="Center" VerticalOptions="End" Text="Sala de espera" HorizontalTextAlignment="Center" TextColor="White" FontSize="65" TextTransform="Uppercase" Margin="0,150,0,0" FontFamily="Plaguard"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
